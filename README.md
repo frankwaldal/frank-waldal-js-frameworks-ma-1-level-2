@@ -24,3 +24,5 @@ You need to add your images to the HTML in this format:
 
 You wrap the gallery in a div with classname "imageContainer". Each image is wrapped in a div with classname "imageWrapper". You can also add information text to each image, that needs to be added in a p with classname "imageText". This needs to be **after** the image.
 Use the `example.html` file in the project as reference.
+
+If you plan on not using the full screen width for the `imageContainer` div, you will need to adjust `grid-template-columns` after taste for the width of the container. I recommend adjusting "x" in this line with the number of thumbnails you want viewed `repeat(x,minmax(0,1fr));`.
